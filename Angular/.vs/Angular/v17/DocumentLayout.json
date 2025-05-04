@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ASPmvc\\Angular\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{82966390-438B-4689-86F2-2D53844ABE06}|Angular\\Angular.csproj|d:\\aspmvc\\angular\\angular\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{82966390-438B-4689-86F2-2D53844ABE06}|Angular\\Angular.csproj|solutionrelative:angular\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "D:\\ASPmvc\\Angular\\Angular\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Angular\\Views\\Home\\Index.cshtml",
+              "ToolTip": "D:\\ASPmvc\\Angular\\Angular\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Angular\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-09-02T03:46:00.936Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
