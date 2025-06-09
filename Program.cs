@@ -77,6 +77,10 @@ builder.Services.AddDbContext<Combineforjoin>(options => {
     options.UseMySql(connectionString, ServerVersion.AutoDetect(connectionString));
     //options.UseSqlServer(builder.Configuration.GetConnectionString("Con"));
 });
+builder.WebHost.ConfigureKestrel(options =>
+{
+    options.ListenAnyIP(80);
+});
 
 var app = builder.Build();
 
