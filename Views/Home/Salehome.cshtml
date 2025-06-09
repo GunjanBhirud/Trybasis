@@ -1,0 +1,138 @@
+﻿@model Realestate.Models.DummySaleData
+
+@{
+    ViewData["Title"] = "Salehome";
+}
+@* <link href="~/css/bootstrap.css" rel="stylesheet" /> *@
+<link rel="stylesheet" href="~/SignupLogincss/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title> Responsive Registration Form | CodingLab </title>
+
+     <link href="~/css/salehome.css" rel="stylesheet" /> 
+   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+      .file{
+         align-content:center;
+      }
+
+  </style>
+
+</head>
+<body>
+    <div class="container">
+        <div class="title">Add Home</div>
+        <div class="content">
+            <form action="/Home/Salehome" method="post" enctype="multipart/form-data">
+                <div class="user-details">
+                    <div class="input-box">
+                        <span class="details">Full Name</span>
+                        <input type="text" name="Sale_Person_Name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Email</span>
+                        <input type="email" name="Sale_Person_Email" placeholder="Enter your Email" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Contact No.</span>
+                        <input type="tel" name="Sale_Person_Number" id="Phone" placeholder="Enter your Contact No."  required pattern="[0-9]{10}">
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Property Value(Only Integer Value)</span>
+                        <input type="number" name="Property_Value" placeholder="Enter Property Value" required>
+                    </div>
+                    <div class="input-box">
+                        <span class="details">Property Address</span>
+                        <input type="text" name="Property_Address" placeholder="Enter Property Address" required>
+                    </div>
+                    
+                 
+                    <div class="input-box">
+                        <span class="details">Upload Property Image</span>
+                       
+                        <input class="file" type="file" name="Property_Imagee" required>
+                    </div> 
+                </div>
+              
+
+                <div class="gender-details">
+                    
+                    
+                    
+                    <span class="gender-title">Select Property Type</span> 
+                    <div class="category" >
+                        <label for="dot-3">
+                            <span class="dot three"><input type="radio" class="radi" value="Plot" name="Property_Type" id="dot-3"></span>
+                            <span class="gender">Plot &nbsp; &nbsp;&nbsp; &nbsp;</span>
+                        </label>
+
+                        <label for="dot-1">
+                            <span class="dot one">&nbsp; &nbsp;<input type="radio" class="radi" value="Apartment" name="Property_Type" id="dot-1" required></span>
+                            <span class="gender">Apartment</span>
+                        </label>
+                        <label for="dot-2">
+                            <span class="dot two">&nbsp; &nbsp;&nbsp; &nbsp;<input type="radio" class="radi" value="Penthouse" name="Property_Type" id="dot-2"></span>
+                            <span class="gender">Penthouse</span>
+                        </label>
+                    </div>
+                </div>
+                <div class="gender-details">
+                <span class="gender-title">Select Property City</span>
+                <div class="category">
+
+                    <label for="dot-11">
+                        <span class="dot one"><input type="radio" class="radi" value="Pune" name="Property_City" id="dot-11" required></span>
+                        <span class="gender">Pune</span>
+                    </label>
+                    <label for="dot-22">
+                        <span class="dot two"><input type="radio" class="radi" value="Jalgaon" name="Property_City" id="dot-22"></span>
+                        <span class="gender">Jalgaon</span>
+                    </label>
+                    <label for="dot-33">
+                        <span class="dot three"><input type="radio" class="radi" value="Mumbai" name="Property_City" id="dot-33"></span>
+                        <span class="gender">Mumbai</span>
+                    </label>
+                </div>
+                </div>
+        
+                @* <div class="input-box">
+                    <span class="details">Enter OTP</span>
+                    <input type="text" name="OTP" placeholder="Enter OPT" >
+                  <button>send</button>
+                </div>
+               *@
+
+                <div class="button">
+                    <input type="submit" value="Add" >
+                </div>
+                <div class="social-login">
+                   
+                    <ul class="socials">
+                        <a href="/Home"><i style="font-size:40px;" class="display-flex-center zmdi zmdi-home"></i></a>
+
+                    </ul>
+                </div>
+                </form>
+            </div>
+
+    </div>
+    </body>
+    </html>
+
+
+
+
+ 
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+
+}

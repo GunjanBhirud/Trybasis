@@ -1,0 +1,428 @@
+﻿@{
+    ViewData["Title"] = "Price";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Basic -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Site Metas -->
+    <meta name="keywords" content="" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>GP ESTATE</title>
+
+    <!-- bootstrap core css -->
+    <link rel="stylesheet" type="text/css" href="~/css/bootstrap.css" />
+
+    <!-- fonts style -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,700|Raleway:400,700&display=swap" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="~/css/style.css" rel="stylesheet" />
+    <!-- responsive style -->
+    <link href="~/css/responsive.css" rel="stylesheet" />
+</head>
+
+<body class="sub_page">
+    
+
+
+    <!-- price section -->
+    <br />
+    <section class="price_section layout_padding-bottom">
+        <div class="container">
+            <div class="heading_container">
+                <h2>
+                    Our Pricing
+                </h2>
+                <p>
+                    There are 3 Plan which makes Properties available according to your Choice
+                </p>
+            </div>
+            <div class="price_container">
+
+                <div class="box">
+                    <div class="detail-box">
+                        <div class="heading-box">
+                            <h4>
+                                01
+                            </h4>
+                            <h6>
+                                Basic
+                            </h6>
+                        </div>
+                        <div class="text-box">
+                            <h2>
+                                80L
+                            </h2>
+                            <ul>
+                                <li>
+                                    To View a
+                                </li>
+                                <li>
+                                    Basic Plan
+                                </li>
+                                <li>
+                                    which Contain Property
+                                </li>
+                                <li>
+                                    value under  80 Lakh.
+                                </li>
+                                <li>
+                                    Then just hit Below
+                                </li>
+                                <li>
+                                    Buy Now Button
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="btn-box">
+                        <a href="/Home/Search?Price=80" class="cbz">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="detail-box">
+                        <div class="heading-box">
+                            <h4>
+                                02
+                            </h4>
+                            <h6>
+                                Standard
+                            </h6>
+                        </div>
+                        <div class="text-box">
+                            <h2>
+                                1Cr
+                            </h2>
+                            <ul>
+                                <li>
+                                    To View a
+                                </li>
+                                <li>
+                                    Standard Plan
+                                </li>
+                                <li>
+                                    which Contain Property
+                                </li>
+                                <li>
+                                    value under 1 Crore.
+                                </li>
+                                <li>
+                                    Then just hit Below
+                                </li>
+                                <li>
+                                    Buy Now Button
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+
+
+                        <a href="/Home/Search?Price=100" class="cbz">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="detail-box">
+                        <div class="heading-box">
+                            <h4>
+                                03
+                            </h4>
+                            <h6>
+                                Premium
+                            </h6>
+                        </div>
+                        <div class="text-box">
+                            <h2>
+                                1.7Cr
+                            </h2>
+                            <ul>
+                                <li>
+                                    To View a
+                                </li>
+                                <li>
+                                    Premium Plan
+                                </li>
+                                <li>
+                                    which Contain Property
+                                </li>
+                                <li>
+                                    value under 1.7 Crore.
+                                </li>
+                                <li>
+                                    Then just hit Below
+                                </li>
+                                <li>
+                                    Buy Now Button
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="btn-box">
+                        <a href="/Home/Search?Price=170" class="cbz">
+                            Buy Now
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- end price section -->
+    <!-- info section -->
+    @* <section class="info_section ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="info_contact">
+                        <h5>
+                            About Apartment
+                        </h5>
+                        <div>
+                            <div class="img-box">
+                                <img src="~/images/location.png" width="18px" alt="">
+                            </div>
+                            <p>
+                                Address
+                            </p>
+                        </div>
+                        <div>
+                            <div class="img-box">
+                                <img src="~/images/phone.png" width="12px" alt="">
+                            </div>
+                            <p>
+                                +01 1234567890
+                            </p>
+                        </div>
+                        <div>
+                            <div class="img-box">
+                                <img src="~/images/mail.png" width="18px" alt="">
+                            </div>
+                            <p>
+                                demo@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info_info">
+                        <h5>
+                            Information
+                        </h5>
+                        <p>
+                            ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="info_links">
+                        <h5>
+                            Useful Link
+                        </h5>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    There are many
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    variations of
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    passages of
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Lorem Ipsum
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    available, but
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    the i
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info_form ">
+                        <h5>
+                            Newsletter
+                        </h5>
+                        <form action="">
+                            <input type="email" placeholder="Enter your email">
+                            <button>
+                                Subscribe
+                            </button>
+                        </form>
+                        <div class="social_box">
+                            <a href="">
+                                <img src="~/images/fb.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="~/images/twitter.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="~/images/linkedin.png" alt="">
+                            </a>
+                            <a href="">
+                                <img src="~/images/youtube.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> *@
+    <section class="info_section ">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="info_contact">
+                        <h5>
+                            About Owners
+                        </h5>
+                        <div>
+                            <div class="img-box">
+                                <img src="~/images/location.png" width="18px" alt="">
+                            </div>
+                            <p>
+                                Pune
+                            </p>
+                        </div>
+                        <div>
+                            <div class="img-box">
+                                <img src="~/images/phone.png" width="12px" alt="">
+                            </div>
+                            <p>
+                                +91 0000000000
+                            </p>
+                        </div>
+                        <div>
+                            <div class="img-box">
+                                <img src="~/images/mail.png" width="18px" alt="">
+                            </div>
+                            <p>
+                                gunjanbhirud2@gmail.com
+                            </p>
+
+                        </div>
+                        <div>
+                            <div class="img-box">
+                                <img src="~/images/mail.png" width="18px" alt="">
+                            </div>
+                            <p>
+                                pramodshelar@gmail.com
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info_info">
+                        <h5>
+                            Information
+                        </h5>
+                        <p>
+                            We build GP REAL-ESTATE website which act as a bridge for people who intrested to Buy Or Sale Properties in Easier Way...
+                        </p>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="info_links">
+                        <h5>
+                            Useful Link
+                        </h5>
+                        <ul>
+                            <li>
+                                <a href="">
+                                    There are many
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    variations of
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    passages of
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Lorem Ipsum
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    available, but
+                                </a>
+                            </li>
+                            <li>
+                                <a href="">
+                                    the i
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="info_form ">
+                        <h5>
+                            GP REAL-ESTATE
+                        </h5>
+                        <a href="/Home">
+                            <img src="~/images/logoo.png" alt="" style="height:10rem;" />
+
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- end info_section -->
+    <!-- footer section -->
+    <section class="container-fluid footer_section ">
+        <div class="container">
+            <p>
+                &copy; <span id="displayYear"></span> All Rights Reserved By GP REAL-ESTATE
+            </p>
+        </div>
+    </section>
+    <!-- end  footer section -->
+
+
+    <script type="text/javascript" src="~/js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="~/js/bootstrap.js"></script>
+    <script type="text/javascript" src="~/js/custom.js"></script>
+
+</body>
+
+</html>
