@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Design by foolishdeveloper.com -->
+    <title>GP ESTATE</title>
+
+
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="~/SignupLogincss/fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="~/SignupLogincss/css/style.css">
+
+</head>
+<body>
+    @*
+    <div class="background">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    </div>
+    <form method="post" action="/Home/Login">
+    <h3>Login Here</h3>
+
+    <label for="username">Username</label>
+    <input type="text" placeholder="Email or Phone" name="email" id="username" required>
+
+    <label for="password">Password</label>
+    <input type="password" placeholder="Password" name="password" id="passwordd" required>
+
+    <button type="submit">Log In</button>
+    <div class="social">
+    <a href="/Home/Index"><div class="go"> Home</div></a>
+    <a href="/Home/Signup"> <div class="fb">  New User?</div></a>
+    </div>
+    </form>*@
+
+
+    <div class="main">
+        <section class="sign-in">
+            <div class="container">
+                <div class="signin-content">
+                    <div class="signin-image">
+                        <figure><img src="~/SignupLogincss/images/signin-image.jpg" alt="sing up image"></figure>
+                        <a href="/Home/Signup" class="signup-image-link">Create an account</a>
+                    </div>
+
+                    <div class="signin-form">
+                        <h2 class="form-title">Log In</h2>
+                        <form method="POST" action="/Home/Otp" class="register-form" id="login-form">
+                            <div class="form-group">
+                                <label for="your_name"><i class="zmdi zmdi-account material-icons-name"></i></label>
+                                <input type="email" name="email" id="your_name" placeholder="Enter Your Email" value=@ViewBag.aju readonly/>
+                            </div>
+                          
+                            @if (@ViewBag.otpses != null)
+                            {
+                                
+                            
+
+                                <div class="form-group">
+                                    <label for="your_otp"><i class="zmdi zmdi-lock"></i></label>
+                                    <input type="number" name="Cotp" id="your_otp" placeholder="" required /><br />
+                                   
+                                   
+                                </div>
+                                @TempData["otp"];
+                            }
+                            
+                            <div class="form-group form-button">
+                                <input type="submit" name="signin" id="signin" class="form-submit" value="Log in" />
+                            </div>
+                          
+                        </form>
+                        <div class="social-login">
+                            <span class="social-label">Go Back</span>
+                            <ul class="socials">
+                                <li><a href="/Home"><i class="display-flex-center zmdi zmdi-home"></i></a></li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <script src="~/SignupLogincss/js/main.js"></script>
+
+
+    <script src="~/SignupLogincss/vendor/jquery/jquery.min.js"></script>
+
+</body>
+</html>
